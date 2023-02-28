@@ -12,7 +12,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open --port 3000",
     "build-staging": "rimraf dist && webpack --config webpack.dev.js && rimraf public && mkdir -p public && cp -r dist/* public && cp -r assets/* public",
-    "build-production": "rimraf dist && webpack --env ENV=production--config webpack.prod.js && rimraf public && mkdir -p public && cp -r dist/* public && cp -r assets/* public",
+    "build-production": "rimraf dist && webpack --config webpack.prod.js && rimraf public && mkdir -p public && cp -r dist/* public && cp -r assets/* public",
     "production":"serve -l 8080 public"
   },
   "devDependencies": {
