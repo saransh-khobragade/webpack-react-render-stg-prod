@@ -31,7 +31,8 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new WebpackObfuscator({
       rotateStringArray: true
-    })
+    }),
+    new Dotenv({systemvars: true}),
   ],
   module: {
     rules: [
