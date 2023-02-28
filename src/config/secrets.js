@@ -7,7 +7,11 @@ const config = {
     }
 }
 
+// const getConfig = (env)=>{
+//     return config[env]
+// }
+
 const getConfig = (env)=>{
-    return config[env]
+    return env
 }
 module.exports = getConfig
