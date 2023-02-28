@@ -4,7 +4,8 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
 
 module.exports = (env)=>{
-  console.log('env variables: ', process.env); // 'local'
+  console.log('webpack env variables: ', env); // 'local'
+  console.log('system env variables: ', process.env); // 'local'
   
   return merge(common, {
     mode: "development",
